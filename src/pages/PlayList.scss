@@ -1,0 +1,157 @@
+.remd-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  z-index: 100;
+  &.has-bottom {
+    bottom: 60px;
+  }
+
+  .remd-scroll-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+.playlst-head {
+  position: relative;
+  padding: 30px 10px 30px 15px;
+  overflow: hidden;
+
+  .plshead-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    .ubg-img {
+      width: 100%;
+      height: 100%;
+      filter: blur(20px);
+    }
+  }
+  .plshead-wrap {
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+    .plshead-fl {
+      position: relative;
+      width: 126px;
+      height: 126px;
+      background: #e2e2e3;
+
+      .u-img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .u-num {
+        position: absolute;
+        right: 2px;
+        top: 0;
+        z-index: 3;
+        padding-left: 15px;
+        color: #fff;
+        font-size: 12px;
+        text-shadow: 1px 0 0 rgba(0,0,0,.15);
+      }
+      &::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 18px;
+        z-index: 2;
+        background-image: linear-gradient(90deg,transparent,rgba(0,0,0,.2));
+      }
+    }
+    .plshead-fr {
+      flex: 1 1 auto;
+      width: 1%;
+      margin-left: 16px;
+
+      .plshead-title {
+        padding-top: 1px;
+        font-size: 17px;
+        line-height: 1.3;
+        color: #fefefe;
+        height: 44px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical
+      }
+
+      .plshead-auth {
+        position: relative;
+        margin-top: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-break: normal;
+
+        .auth-info {
+          display: inline-block;
+          color: hsla(0,0%,100%,.7);
+
+          .auth-avatar {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 5px;
+
+            .avatar-img {
+              width: 100%;
+              vertical-align: middle;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pls-intro {
+  position: relative;
+  margin: 0 10px 0 15px;
+  padding-top: 10px;
+  line-height: 19px;
+  color: #666;
+
+  .u-intro {
+    position: relative;
+    padding-bottom: 18px;
+    line-height: 19px;
+    color: #666;
+
+    .u-fthde {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      line-height: 1.5;
+    }
+  }
+}
+
+.song-detail-title {
+  height: 23px;
+  line-height: 23px;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #666;
+  background-color: #eeeff0;
+}

@@ -1,0 +1,95 @@
+.singer-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  color: #333333;
+  line-height: 1.5;
+  z-index: 100;
+
+  &.has-bottom {
+    bottom: 60px;
+  }
+
+  .scroll-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.singer-head {
+  position: relative;
+  padding-bottom: 68%;
+  overflow: hidden;
+
+  .singer-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .singer-name {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 5px;
+    z-index: 103;
+    color: #fff;
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    z-index: 102;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 33px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(255, 255, 255, 0.1))
+  }
+}
+
+.singer-desc {
+  padding: 10px 15px 0;
+
+  .art-intro {
+    position: relative;
+    padding-bottom: 18px;
+    line-height: 19px;
+    color: #666;
+
+    .art-brk {
+      font-size: 14px;
+      line-height: 1.5;
+
+      &.thde3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
+
+.art-list {
+  .title {
+    height: 23px;
+    line-height: 23px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #666;
+    background-color: #eeeff0;
+  }
+}
