@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+before starting the app, you need to clone the [NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)repository, and set the port to 4000.(for api service)
+
 ## Available Scripts
 
 In the project directory, you can run:
